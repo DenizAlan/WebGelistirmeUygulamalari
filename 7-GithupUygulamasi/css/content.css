@@ -25,5 +25,25 @@
   background-color: white;
   padding: 10px;
   border: 1px solid lightgrey;
+}
 
+#searchedUserDiv{
+  display: flex;
+  flex-direction:row;
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid lightgrey;
+}
+
+#search-main{
+  display: flex;
+  flex-direction: row;
+}
+
+#todaySentenceDiv{
+  margin-top: 70px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid lightgrey;
 }
