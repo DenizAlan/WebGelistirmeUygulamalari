@@ -1,15 +1,15 @@
-class Githup{
-    constructor(){
-        this.url="https://api.githup.com/users/"
+class Github {
+    constructor() {
+        this.url = "https://api.github.com/users/";
     }
 
-    async getGithupData(userName){
-       const userData= await ((await fetch(`${this.url}${userName}`)).json())
-       const repoData=await ((await fetch (`${this.url}${userName}/repos`)).json())
+    async getGithubData(username) {
+        const userData = await (await fetch(`${this.url}${username}`)).json();
+        const repoData = await (await fetch(`${this.url}${username}/repos`)).json();
 
-       return{
-        user : userData,
-        repo : repoData
-       }
+        return {
+            user: userData,
+            repo: repoData
+        }
     }
 }

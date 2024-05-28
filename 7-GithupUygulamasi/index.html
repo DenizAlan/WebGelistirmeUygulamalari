@@ -29,14 +29,14 @@
                     <input id="githupName" type="text" class="form-control" placeholder="Githup Kullanıcısı Arayın">
                     <div class="mt-3">
                         <button style="width: 75px;" type="submit" class="btn btn-primary btn-sm">Ara</button>
-                        <button style="width: 75px;" type="button" class="btn btn-danger btn-sm">Temizle</button>
+                        <button id="clearButton" style="width: 75px;" type="button" class="btn btn-danger btn-sm">Temizle</button>
                     </div>
                 </form>
             </div>
         </div>
 
         <div id="profileContentDiv" class="row mt-2">
-            <div id="profilDiv" class="col-sm-12 col-md-4 col-lg-4">
+            <!-- <div id="profilDiv" class="col-sm-12 col-md-4 col-lg-4">
                 <img  id="profilImg" class="mb-3" src="image/ornek.png" width="200" height="200" alt="">
                 <hr style="border: 1px solid lightgrey;" width="200px">
                 <span>Deniz Alan</span>
@@ -71,11 +71,11 @@
                         <a href="#">Repoları Göster</a>
                     </div>
                </div>
-            </div>
+            </div> -->
         </div>
 
         <div id="reposDiv" class="row">
-            <table class="table m-3 table-striped">
+             <table  class="table m-3 table-striped">
                 <thead>
                   <tr>
                     <th scope="col">No</th>
@@ -83,23 +83,18 @@
                     <th scope="col">Oluşturma Tarihi</th>
                     
                   </tr>
-                </thead>
-                <tbody>
-                  <tr>
+                </thead> 
+                <tbody id="tableContent">
+                  <!-- <tr>
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                   
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                   
-                  </tr>
+                  </tr> -->
+                  
                   
                 </tbody>
-              </table>
+              </table> 
         </div>
 
         <div id="searchedUserDiv" class="row ">
@@ -147,6 +142,7 @@
 
 
     <script src="js/githup.js"></script>
+    <script src="js/ui.js"></script>
     <script src="js/main.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
