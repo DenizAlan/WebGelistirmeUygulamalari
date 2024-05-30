@@ -4,8 +4,30 @@ class UI {
         this.githupNameInput=document.querySelector("#githupName")
         this.tableContent=document.querySelector("#tableContent")
         this.isShowRepo=true;
+        this.searchedUserList=document.querySelector("#searchedUserList")
        
         
+    }
+
+    fillSearchedUserToUIFromStorage(){
+        const users= storagex.getSearchedUserFromStorage();
+        if(users!=null && users.length>0){
+           users.forEach(user=>{
+            const li = document.createElement("li");
+            li.className="list-group-item";
+            li.textContent=user;
+            this.searchedUserList.appendChild(li);
+           })
+        }
+    }
+
+    addSearchedUserToUI(username){
+        if(storagex.checkUser(username)){
+        const li = document.createElement("li");
+        li.className="list-group-item";
+        li.textContent=username;
+        this.searchedUserList.appendChild(li);
+        }
     }
 
     addUserProfileToUI(user){
@@ -53,6 +75,11 @@ class UI {
     clearInput(){
         this.githupNameInput.value="";
         this.profileContentDiv.innerHTML="";
+        this.tableContent.innerHTML=""
+    }
+
+    clearAll(){
+        this.searchedUserList.innerHTML=""
     }
 
     checkMessage(){

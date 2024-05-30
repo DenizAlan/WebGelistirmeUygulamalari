@@ -1,6 +1,7 @@
 const githupName = document.querySelector("#githupName");
 const searchForm =document.querySelector("#searchForm");
 const clearButton= document.querySelector("#clearButton")
+const clearAllButton=document.querySelector("#clearAll")
 
 
 //(githup.js) githup sınıfındaki bir metodu kullanabilmen için bu sınıftan bir nesne türetmelisin
@@ -12,7 +13,20 @@ runEventListeners();
 function runEventListeners(){
     searchForm.addEventListener("submit",search);
     clearButton.addEventListener("click",clearInput)
+    document.addEventListener("DOMContentLoaded",runPageLoaded);
+    clearAllButton.addEventListener("click", clearAll)
    
+}
+
+function clearAll(){
+    //bu metodla storage temizlendi
+    storagex.clearAllSearchedFromStorage();
+    //bu metodla ön yüz temizlendi
+    ui.clearAll()
+}
+
+function runPageLoaded(){
+    ui.fillSearchedUserToUIFromStorage();
 }
 
 function clearInput(){
@@ -26,6 +40,8 @@ function search(e){
     }else{
         githup.getGithubData(username)
         .then((response)=>{
+            ui.addSearchedUserToUI(username);
+            storagex.addSearchedUserToStorage(username)
             ui.addUserProfileToUI(response.user)
             document.querySelector("#showRepo").addEventListener("click",()=>ui.showRepos(response.repo));
         })
