@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinema Bilet Uygulaması</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <h2 class="title">SİNEMA BİLET UYGULAMASI</h2>
+        <div class="seatMain">
+            <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>   <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>   <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>   <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>   <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>
+        </div>
+        <div class="movieMain">
+            <select id="selectMovie">
+                <option value="20">Film 1</option>
+                <option value="25">Film 2</option>
+                <option value="30">Film 3</option>
+            </select>
+        </div>
+        <div class="seatStatusMain">
+            <div class="row">
+                <div class="emptySeat"><i class="fa-solid fa-couch"></i><span>Boş</span></div>
+                <div class="selectedSeat"><i class="fa-solid fa-couch"></i><span>Seçili</span></div>
+                <div class="fullSeat"><i class="fa-solid fa-couch"></i><span>Dolu</span></div>
+            </div>
+        </div>
+        <div class="resultTextMain">
+            <p><span id="count">0</span> adet bilet için ödenecek tutar <span id="amount">0</span> TL'dir</p>
+        </div>
+        <div class="buttonMain">
+            <button id="buyButton" type="button">Satın Al</button>
+            <button id="clearButton" type="button">Temizle</button>
+        </div>
+        <div class="screen">
+            <h2 class="screenTitle">SAHNE</h2>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="storage.js"></script>
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
