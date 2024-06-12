@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(233, 69, 233);
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+   
+}
+
+textarea{
+    width: 640px;
+    height: 370;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 4px 6px 8px lightgrey;
+    text-align: center;
+    
+}
+
+textarea::placeholder{
+    text-align: center;
+}
+
+#encodeButton{
+    padding: 10px;
+    width: 120px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(233, 140, 128);
+    color: black;
+    margin-bottom: 5px;
+}
+
+#decodeButton{
+    padding: 10px;
+    width: 120px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 251, 5);
+    color: black;
+}
+
+#encodeButton:hover {
+    background-color: rgb(183, 47, 26);
+    cursor:pointer;
+}
+
+#decodeButton:hover{
+    background-color: rgb(175, 172, 2);
+    cursor:pointer;
+
+
+}
