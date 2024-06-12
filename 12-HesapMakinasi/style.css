@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*çalıştırdıgın cihazın yüksekliği kadar yer kapla*/
+  height: 100vh;
+}
+
+#calculator {
+  background-color: whitesmoke;
+  width: 320px;
+  height: 460px;
+ 
+}
+
+.resulPanel {
+  width: 100%;
+  height: 100px;
+  background-color: #d91b5b;
+  border: 1px solid #f91e67;
+}
+
+.result {
+  font-size: 3rem;
+  color: black;
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.clearDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.clearDiv button {
+  width: 50%;
+  height: 50px;
+  color: whitesmoke;
+  background-color: #ec3c33;
+  border: none;
+  margin: 1px;
+}
+
+.number{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: #8CC63C;
+    border: 1px solid rgb(107, 180, 107);
+    font-size: 20px;
+}
+
+button{
+    margin: 3px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.operators button {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: #F2811D;
+    border: 1px solid #b76116;
+    font-size: 20px;
+    
+}
+
+.equals{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: blueviolet;
+    border: 1px solid #faf44d;
+    font-size: 20px;
+}
+
+.number:hover{
+    background-color: #92f20b;;
+}
+
+.equals:hover{
+    background-color: rgb(123, 37, 204);
+
+}
+
+.operator:hover {
+    background-color:#bc5c09 ;
+}
+
+.clearDiv button:hover{
+  background-color: #d8140a;
+
+}
