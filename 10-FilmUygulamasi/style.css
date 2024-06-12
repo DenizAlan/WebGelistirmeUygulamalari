@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #363d6b;
+    font-family: "Poppins";
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    
+    /*row hızalama justify-content ile hızalanır*/
+    /*column ise align-items ile hızalanır*/
+   align-items: end;
+}
+
+#searchInput{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+
+#searchInput::placeholder {
+    color: lightgray;
+    font-size: 12px;
+    text-align: center;
+}
+
+.movies{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /*Satır dolunca alt satıra geç*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie{
+    margin: 10px;
+    width: 260px;
+    height: 405px;
+    background-color:  #909cea;
+
+}
+
+.moviePicture{
+    width: 260px;
+    height: 320px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieName{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.imdbPoint{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+
+.red{
+    background-color: red;
+
+}
+
